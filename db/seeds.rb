@@ -22,7 +22,7 @@ Category.create [
                 ]
 
 # Creating Some Articles
-user.articles.create([
+User.find_by(email: "vishnumohanantheking@gmail.com").articles.create([
                        {
                          title: 'Advanced Active Record',
                          body: "Models need to relate to each other. In the real world, ..",
